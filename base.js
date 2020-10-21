@@ -68,7 +68,7 @@ const loginFromTouchId = () => {
 const startTouchIdRegistration = () => {
     const options = {
         publicKey: {
-            rp: { name: 'localhost:8000' },
+            rp: { name: 'https://prateekjadhwani.github.io/touchidtest/' },
             user: {
                 name: document.querySelector('[name=userid]').value,
                 id: new Uint8Array(16),
