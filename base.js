@@ -4,9 +4,12 @@ let serverChallenge2 = new Uint8Array('ae5r'.split(''));
 
 
 const check = () => {
+    // https://developer.mozilla.org/en-US/docs/Web/API/PublicKeyCredential
+    // isUserVerifyingPlatformAuthenticatorAvailable() tells you if you can use a platform to authenticate the user
     PublicKeyCredential.isUserVerifyingPlatformAuthenticatorAvailable()
-    .then( i => {
-        console.log(i);
+    .then((isAvailable) => {
+        
+        // Set message to green color
         document.querySelector('.check-container').classList.add('check-container--green');
         document.querySelector("#checkcontainer").innerText = 'Your system allows use of Touch ID / Face Id';
         supportsPublicCreds = true;
