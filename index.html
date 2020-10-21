@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Login Via TouchID Test</title>
+        <h1>Login Via TouchID Test</h1>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <div class="check-container">
+            <span id="checkcontainer">Result</span>
+        </div>
+        <div class="login-container">
+            <div class="creds-container">
+                <form onsubmit="event.preventDefault();login();">
+                    <input class="field" type="text" name="userid" placeholder="Username"/>
+                    <input class="field" type="password" name="password" placeholder="Password"/>
+                    <button class="field-button">Login</button>
+                </form>
+            </div>
+        </div>
+        <div class="touchid-container hidden" id="touchidLoginContainer">
+            <button class="field-button" onclick="loginFromTouchId()">Login with Touch/FaceID?</button>
+            <button class="field-button secondary" onclick="showUserLoginWithFields()">Login as Someone else?</button>
+        </div>
+        <div class="login-success hidden">
+            <p>Would you like to enable TouchID or FaceID ?</p>
+            <button class="field-button" onclick="startTouchIdRegistration()">Enable Touch / Face Id</button>
+            <button class="field-button secondary" onclick="showContent()">Nah, I am good</button>
+        </div>
+        <div class="content hidden">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis enim nunc, fermentum nec nisl viverra, iaculis blandit metus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin et quam non enim efficitur gravida nec eu enim. Sed vel porta augue. Cras euismod rutrum cursus. Phasellus cursus nisl ac libero efficitur hendrerit. Pellentesque porttitor a est eget sagittis. Cras vitae aliquet ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi interdum pharetra mauris. Phasellus vestibulum felis ante, in consectetur tellus euismod nec. Nunc scelerisque metus non lacinia cursus.</p>
+
+            <p>Nulla interdum nisi id risus pellentesque ullamcorper. Duis faucibus augue pretium dui maximus, ac egestas elit ultrices. Ut lobortis elit eget nibh faucibus, a condimentum mi elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed nisl tempor nulla consequat finibus et sit amet lectus. Sed ut varius orci. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean tincidunt, ex porttitor suscipit venenatis, massa nulla fringilla lacus, eu consectetur neque lorem in augue. Mauris molestie tristique felis vitae consectetur. Aliquam erat volutpat. Integer urna neque, eleifend nec diam ut, feugiat auctor tortor. Morbi pharetra condimentum lacus, nec tincidunt magna pretium vitae. Maecenas quis molestie enim.</p>
+        </div>
+        <script type="text/javascript" src="./base.js"></script>
+    </body>
+</html>

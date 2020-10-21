@@ -1,0 +1,58 @@
+body {
+    background-color: rgb(238, 238, 238);
+}
+
+h1 {
+    text-align: center;
+    margin: 50px;
+}
+
+.hidden {
+    display: none;
+}
+.creds-container, .touchid-container, .login-success {
+    width: 300px;
+    margin: 50px auto;
+}
+
+.field, .field-button {
+    height: 50px;
+    width: 100%;
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #dfdfdf;
+}
+
+.field-button {
+    background: #8484c5;
+    color: white;
+    cursor: pointer;
+}
+
+.secondary {
+    background: #c584bd;
+}
+
+.field-button:hover {
+    background: #3d3dcb;
+    color: white;
+}
+
+.check-container {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: inline-block;
+    width: 200px;
+    padding: 20px;
+}
+
+.check-container--green {
+    background-color: #a3d1a3;
+}
+
+.check-container--red {
+    background-color: #ea8787;
+}
